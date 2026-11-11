@@ -6,7 +6,8 @@ Material decisions for the Industrial IoT project are recorded here as numbered 
 
 | ADR | Title | Status | Stage | Affected stages |
 | --- | --- | --- | --- | --- |
-| — | No decisions recorded yet | — | — | — |
+| [0001](0001-persona-and-mvp-scope.md) | Primary Persona and MVP Questions | accepted | 01 | 02–24 |
+| [0002](0002-prediction-ambition.md) | Prediction Ambition | accepted | 01 | 02–24 |
 
 Statuses: `proposed`, `accepted`, `rejected`, `superseded by NNNN`.
 

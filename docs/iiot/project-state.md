@@ -12,16 +12,17 @@ Shared contract: [iiot-workflow.instructions.md](../../.github/instructions/iiot
 | Learning style | Guided explanations with approval at material decisions |
 | Git policy | User-initiated only: commit and merge only when the user explicitly asks; stages propose commit subjects |
 | Repository arrangement | Single project in this workspace (no other project detected at generation) |
+| Git repository | Initialised on `main`; remote `origin` = https://github.com/savadkv01/Industrial-IoT-and-Predictive-Maintenance-platform |
 
 ## Active stage
 
-None. Next action: run `iiot-01-business-requirements` manually.
+None. Stage 01 is complete and accepted. Next action: run `iiot-02-industrial-domain-and-measurement` manually.
 
 ## Stage status
 
 | # | Stage | Status | Evidence / outputs | Notes |
 | --- | --- | --- | --- | --- |
-| 01 | Business requirements | not started | — | |
+| 01 | Business requirements | complete | `requirements.md`; ADRs 0001–0002 | Accepted by user; numeric platform SLO targets deferred. |
 | 02 | Industrial domain & measurement | not started | — | |
 | 03 | Source discovery & profiling | not started | — | |
 | 04 | Equipment scope & feasibility | not started | — | |
@@ -48,11 +49,17 @@ None. Next action: run `iiot-01-business-requirements` manually.
 
 ## Approved requirements and decisions
 
-None yet. See [decisions/README.md](decisions/README.md).
+- Primary persona: reliability engineer.
+- MVP questions: abnormal operating condition now; currently degraded component; inspection priority and rationale; telemetry trustworthiness and freshness.
+- MVP ambition: monitoring and diagnosis; forecasting is an optional benchmark subject to source evidence.
+- Acceptance style: analytical criteria follow profiling; numeric platform SLO targets are deferred pending source/feasibility/architecture evidence.
+- Advisory boundary: inspection recommendations only; no control actions or automated work orders.
+- Working name: Industrial Asset Reliability & Predictive Maintenance Data Platform.
+- Stage 01 requirements and deliverables accepted by the user. Numeric platform SLO targets remain deferred. See [decisions/README.md](decisions/README.md).
 
 ## Checks run
 
-None yet.
+- Stage 01 documentation/traceability consistency review: passed; all 12 requirements have acceptance and falsification criteria and map to implementation and verification stages.
 
 ## Blockers
 
@@ -60,7 +67,10 @@ None recorded.
 
 ## Unresolved questions
 
-- Equipment family, data tracks, architecture and hardware budget are all undecided (Stages 01–05).
+- Whether the selected data can support component-level diagnosis or future-failure labels (Stage 03).
+- Source coverage, quality, time semantics, licensing and redistribution terms (Stage 03).
+- Numeric platform SLO targets and analytical thresholds (Stages 03–05).
+- Equipment family, data tracks, architecture and hardware budget (Stages 02–05).
 
 ## Deferred optional capabilities
 
@@ -71,3 +81,5 @@ None recorded.
 | Date | Stage | Change |
 | --- | --- | --- |
 | 2026-11-11 | 00 | Workflow generated; all stages initialised as not started. |
+| 2026-11-11 | 00 | Git initialised on user request; workflow files committed (`1f224c5`) and pushed to `origin/main`. |
+| 2026-11-11 | 01 | Recorded user selections; completed and accepted business requirements and ADRs 0001–0002. Numeric platform SLO targets deferred. |
